@@ -1,0 +1,282 @@
+* {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left, #4b6cb7, #182848);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    width: 60em;
+    margin: auto;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 0 1em 1em 1em;
+}
+
+h1 {
+    margin-top: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    color: #182848;
+}
+
+#button {
+    font-size: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #4b6cb7;
+    color: white;
+    border-radius: 5px;
+    border: solid #4b6cb7;
+    margin: 2em 0 2em 2em;
+}
+
+#table {
+    font-size: 1em;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#table th {
+    font-size: 1.25em;
+    border-bottom: solid 3px #dee2e6;
+    border-top: solid 1px #dee2e6;
+    border-right: solid 1px #dee2e6;
+    border-left: solid 1px #dee2e6;
+    padding: 1em 0 1em 0.5em;
+}
+
+#read-column {
+    width: 6em;
+}
+
+#delete-column {
+    width: 4em;
+}
+
+td {
+    border: solid 1px #dee2e6;
+    padding: 1em 0.5em 1em 0.5em;
+    background-color: none;
+}
+
+#table-head:hover{
+    background-color: #f8f9fa;
+}
+
+@media only screen and (min-width: 1024px) {
+    tr:hover {
+    background-color: #dee2e6;
+}
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+#modal-content {
+    width: 500px;
+    height: 395px;
+    background-color: white;
+    margin-top: 5em;
+    border-radius: 5px;
+    position: relative;
+    animation-duration: 0.4s;
+}
+
+#close {
+    position: absolute;
+    font-size: 2em;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+}
+
+h5 {
+    display: block;
+    border-bottom: solid 1px #c0c0c0;
+    font-size: 1.5em;
+    padding: 1em 1em 1em 1em;
+} 
+
+.label {
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+    font-size: 1.25em;
+    width: 100px;
+}
+
+.input {
+    width: 18.5em;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    font-size: 1.15em;
+}
+
+.choose {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+#please {
+    margin-bottom: 1em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.read {
+    margin-right: 2em;
+    padding-bottom: 2em;
+} 
+
+#yes {
+    margin-bottom: 0.5em;
+}
+
+#modal-footer {
+    border-top: solid 1px #c0c0c0;
+}
+
+#save {
+    position: absolute;
+    right: 0;
+    margin-top: 0.7em;
+    margin-right: 2em;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #4b6cb7;
+    color: white;
+    border-radius: 5px;
+    border: solid  #4b6cb7;
+}
+
+#save:active {
+    background-color: #3657a3;
+    border: solid  #3657a3;
+}
+
+#button:active {
+    background-color: #3657a3;
+    border: solid  #3657a3;
+}
+
+#book-added {
+   position: absolute;
+   margin-top: 1em;
+   margin-left: 1em;
+   animation-duration: 2s;
+}
+
+.readButton {
+    font-size: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #4b6cb7;
+    color: white;
+    border-radius: 5px;
+    border: solid #4b6cb7;
+    width: 100%;
+    text-align: center;
+}
+
+#read {
+    background-color: #4b6cb7;
+    width: 100%;
+    text-align: center;
+}
+
+#unread {
+    background-color: rgb(98, 98, 119);
+    border: solid rgb(98, 98, 119);
+    width: 100%;
+    text-align: center;
+}
+
+#delete {
+    font-size: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    border: solid #dc3545;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    #container {
+        width: 40em;
+    } 
+}
+
+@media only screen and (max-width: 700px) {
+    #container {
+        width: 85%;
+        padding: 0 0.25em 1em 0.25em;
+    } #table th {
+        font-size: 1.25em;
+}   #read-column {
+    width: 6em;
+}   #delete-column {
+    width: 4em;
+}
+}
+
+@media only screen and (max-width: 575px) {
+    #container {
+        width: 95%;
+    }
+     #table th {
+        font-size: 75%;
+        padding: 5% 0 5% 2%;
+    } td {
+        font-size: 75%;
+    } .readButton {
+        padding: 0.5em 0.5em 0.5em 0.5em;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #modal-content {
+        width: 95%;
+    } .input {
+        width: 70%;
+    } .label {
+        width: 75px;
+    } body {
+        background: linear-gradient(to left, #4b6cb7, #182848);
+    } 
+}
+
+@media only screen and (max-width: 390px) {
+     #modal-content {
+        width: 95%;
+        height: 405px;  
+    } .input {
+        margin-top: 1em;
+        width: 60%;
+        font-size: 90%;
+    } .label {
+        width: 50px;
+        font-size: 90%;
+    } body {
+        background: linear-gradient(to left, #4b6cb7, #182848);
+    } 
+}
