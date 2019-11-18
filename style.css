@@ -52,6 +52,10 @@ h1 {
     padding: 1em 0 1em 0.5em;
 }
 
+.info-column {
+    width: 10em;
+}
+
 #read-column {
     width: 6em;
 }
